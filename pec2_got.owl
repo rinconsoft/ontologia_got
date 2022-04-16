@@ -1,0 +1,961 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/arincon/ontologies/2022/3/untitled-ontology-3"
+     xml:base="http://www.semanticweb.org/arincon/ontologies/2022/3/untitled-ontology-3"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:untitled-ontology-3="http://www.semanticweb.org/arincon/ontologies/2022/3/untitled-ontology-3#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/arincon/ontologies/2022/3/untitled-ontology-3">
+        <rdfs:comment>Ontology about the families of the series Game of Thrones
+
+created by Antonio C. Rincón Ramos</rdfs:comment>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/arincon/ontologies/2022/3/untitled-ontology-3#belongsToHouse -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/arincon/ontologies/2022/3/untitled-ontology-3#belongsToHouse">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/arincon/ontologies/2022/3/untitled-ontology-3#Character"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/arincon/ontologies/2022/3/untitled-ontology-3#House"/>
+        <rdfs:comment>A character belongs to a house</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/arincon/ontologies/2022/3/untitled-ontology-3#hasBrother -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/arincon/ontologies/2022/3/untitled-ontology-3#hasBrother">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/arincon/ontologies/2022/3/untitled-ontology-3#hasSiblings"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/arincon/ontologies/2022/3/untitled-ontology-3#Character"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/arincon/ontologies/2022/3/untitled-ontology-3#Brother"/>
+        <rdfs:comment>A character has brother</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/arincon/ontologies/2022/3/untitled-ontology-3#hasChild -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/arincon/ontologies/2022/3/untitled-ontology-3#hasChild">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/arincon/ontologies/2022/3/untitled-ontology-3#hasRelation"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/arincon/ontologies/2022/3/untitled-ontology-3#Character"/>
+        <rdfs:comment>A character has child</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/arincon/ontologies/2022/3/untitled-ontology-3#hasDaughter -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/arincon/ontologies/2022/3/untitled-ontology-3#hasDaughter">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/arincon/ontologies/2022/3/untitled-ontology-3#hasChild"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/arincon/ontologies/2022/3/untitled-ontology-3#Character"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/arincon/ontologies/2022/3/untitled-ontology-3#Daughter"/>
+        <rdfs:comment>A character has daughter</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/arincon/ontologies/2022/3/untitled-ontology-3#hasFather -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/arincon/ontologies/2022/3/untitled-ontology-3#hasFather">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/arincon/ontologies/2022/3/untitled-ontology-3#hasParent"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/arincon/ontologies/2022/3/untitled-ontology-3#Character"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/arincon/ontologies/2022/3/untitled-ontology-3#Father"/>
+        <rdfs:comment>A character has father</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/arincon/ontologies/2022/3/untitled-ontology-3#hasGrandFather -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/arincon/ontologies/2022/3/untitled-ontology-3#hasGrandFather">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/arincon/ontologies/2022/3/untitled-ontology-3#hasGrandparent"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/arincon/ontologies/2022/3/untitled-ontology-3#Character"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/arincon/ontologies/2022/3/untitled-ontology-3#Grandfather"/>
+        <rdfs:comment>A character has grandfather</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/arincon/ontologies/2022/3/untitled-ontology-3#hasGrandMother -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/arincon/ontologies/2022/3/untitled-ontology-3#hasGrandMother">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/arincon/ontologies/2022/3/untitled-ontology-3#hasGrandparent"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/arincon/ontologies/2022/3/untitled-ontology-3#Character"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/arincon/ontologies/2022/3/untitled-ontology-3#Grandmother"/>
+        <rdfs:comment>A character has grandmother</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/arincon/ontologies/2022/3/untitled-ontology-3#hasGrandchild -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/arincon/ontologies/2022/3/untitled-ontology-3#hasGrandchild">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/arincon/ontologies/2022/3/untitled-ontology-3#hasRelation"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/arincon/ontologies/2022/3/untitled-ontology-3#Character"/>
+        <rdfs:comment>A character has grandchild</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/arincon/ontologies/2022/3/untitled-ontology-3#hasGranddaughter -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/arincon/ontologies/2022/3/untitled-ontology-3#hasGranddaughter">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/arincon/ontologies/2022/3/untitled-ontology-3#hasGrandchild"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/arincon/ontologies/2022/3/untitled-ontology-3#Character"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/arincon/ontologies/2022/3/untitled-ontology-3#Granddaughter"/>
+        <rdfs:comment>A character has granddaughter</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/arincon/ontologies/2022/3/untitled-ontology-3#hasGrandparent -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/arincon/ontologies/2022/3/untitled-ontology-3#hasGrandparent">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/arincon/ontologies/2022/3/untitled-ontology-3#hasRelation"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/arincon/ontologies/2022/3/untitled-ontology-3#Character"/>
+        <rdfs:comment>A character has grandparent</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/arincon/ontologies/2022/3/untitled-ontology-3#hasGrandson -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/arincon/ontologies/2022/3/untitled-ontology-3#hasGrandson">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/arincon/ontologies/2022/3/untitled-ontology-3#hasGrandchild"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/arincon/ontologies/2022/3/untitled-ontology-3#Character"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/arincon/ontologies/2022/3/untitled-ontology-3#Grandson"/>
+        <rdfs:comment>A character has grandson</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/arincon/ontologies/2022/3/untitled-ontology-3#hasHusband -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/arincon/ontologies/2022/3/untitled-ontology-3#hasHusband">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/arincon/ontologies/2022/3/untitled-ontology-3#hasSpouse"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/arincon/ontologies/2022/3/untitled-ontology-3#Character"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/arincon/ontologies/2022/3/untitled-ontology-3#Husband"/>
+        <rdfs:comment>A character has husband</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/arincon/ontologies/2022/3/untitled-ontology-3#hasMother -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/arincon/ontologies/2022/3/untitled-ontology-3#hasMother">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/arincon/ontologies/2022/3/untitled-ontology-3#hasParent"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/arincon/ontologies/2022/3/untitled-ontology-3#Character"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/arincon/ontologies/2022/3/untitled-ontology-3#Mother"/>
+        <rdfs:comment>A character has mother</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/arincon/ontologies/2022/3/untitled-ontology-3#hasParent -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/arincon/ontologies/2022/3/untitled-ontology-3#hasParent">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/arincon/ontologies/2022/3/untitled-ontology-3#hasRelation"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/arincon/ontologies/2022/3/untitled-ontology-3#Character"/>
+        <rdfs:comment>A character has parent</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/arincon/ontologies/2022/3/untitled-ontology-3#hasRelation -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/arincon/ontologies/2022/3/untitled-ontology-3#hasRelation">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/arincon/ontologies/2022/3/untitled-ontology-3#Character"/>
+        <rdfs:comment>A character has related to another character</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/arincon/ontologies/2022/3/untitled-ontology-3#hasSiblings -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/arincon/ontologies/2022/3/untitled-ontology-3#hasSiblings">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/arincon/ontologies/2022/3/untitled-ontology-3#hasRelation"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/arincon/ontologies/2022/3/untitled-ontology-3#Character"/>
+        <rdfs:comment>A character has siblings</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/arincon/ontologies/2022/3/untitled-ontology-3#hasSister -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/arincon/ontologies/2022/3/untitled-ontology-3#hasSister">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/arincon/ontologies/2022/3/untitled-ontology-3#hasSiblings"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/arincon/ontologies/2022/3/untitled-ontology-3#Character"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/arincon/ontologies/2022/3/untitled-ontology-3#Sister"/>
+        <rdfs:comment>A character has sister</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/arincon/ontologies/2022/3/untitled-ontology-3#hasSon -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/arincon/ontologies/2022/3/untitled-ontology-3#hasSon">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/arincon/ontologies/2022/3/untitled-ontology-3#hasChild"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/arincon/ontologies/2022/3/untitled-ontology-3#Character"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/arincon/ontologies/2022/3/untitled-ontology-3#Son"/>
+        <rdfs:comment>A character has son</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/arincon/ontologies/2022/3/untitled-ontology-3#hasSpouse -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/arincon/ontologies/2022/3/untitled-ontology-3#hasSpouse">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/arincon/ontologies/2022/3/untitled-ontology-3#hasRelation"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/arincon/ontologies/2022/3/untitled-ontology-3#Character"/>
+        <rdfs:comment>A character has spouse</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/arincon/ontologies/2022/3/untitled-ontology-3#hasWife -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/arincon/ontologies/2022/3/untitled-ontology-3#hasWife">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/arincon/ontologies/2022/3/untitled-ontology-3#hasSpouse"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/arincon/ontologies/2022/3/untitled-ontology-3#Character"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/arincon/ontologies/2022/3/untitled-ontology-3#Wife"/>
+        <rdfs:comment>A character has wife</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/arincon/ontologies/2022/3/untitled-ontology-3#catchword -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/arincon/ontologies/2022/3/untitled-ontology-3#catchword">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/arincon/ontologies/2022/3/untitled-ontology-3#House"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment>Is the catchword of the house</rdfs:comment>
+        <rdfs:comment>prueba</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/arincon/ontologies/2022/3/untitled-ontology-3#emblem -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/arincon/ontologies/2022/3/untitled-ontology-3#emblem">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/arincon/ontologies/2022/3/untitled-ontology-3#House"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment>is the emblem of the house</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/arincon/ontologies/2022/3/untitled-ontology-3#houseName -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/arincon/ontologies/2022/3/untitled-ontology-3#houseName">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/arincon/ontologies/2022/3/untitled-ontology-3#House"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/arincon/ontologies/2022/3/untitled-ontology-3#name -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/arincon/ontologies/2022/3/untitled-ontology-3#name">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/arincon/ontologies/2022/3/untitled-ontology-3#Character"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment>Is the name of the character</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/arincon/ontologies/2022/3/untitled-ontology-3#Brother -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/arincon/ontologies/2022/3/untitled-ontology-3#Brother">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/arincon/ontologies/2022/3/untitled-ontology-3#Siblings"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/arincon/ontologies/2022/3/untitled-ontology-3#hasSister"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/arincon/ontologies/2022/3/untitled-ontology-3#Sister"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/arincon/ontologies/2022/3/untitled-ontology-3#Sister"/>
+        <rdfs:comment>Character is a brother</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/arincon/ontologies/2022/3/untitled-ontology-3#Character -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/arincon/ontologies/2022/3/untitled-ontology-3#Character">
+        <rdfs:comment>Series characters</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/arincon/ontologies/2022/3/untitled-ontology-3#Child -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/arincon/ontologies/2022/3/untitled-ontology-3#Child">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/arincon/ontologies/2022/3/untitled-ontology-3#Relation"/>
+        <rdfs:comment>Character is a child</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/arincon/ontologies/2022/3/untitled-ontology-3#Daughter -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/arincon/ontologies/2022/3/untitled-ontology-3#Daughter">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/arincon/ontologies/2022/3/untitled-ontology-3#Child"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/arincon/ontologies/2022/3/untitled-ontology-3#hasFather"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/arincon/ontologies/2022/3/untitled-ontology-3#Father"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/arincon/ontologies/2022/3/untitled-ontology-3#hasMother"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/arincon/ontologies/2022/3/untitled-ontology-3#Mother"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/arincon/ontologies/2022/3/untitled-ontology-3#Son"/>
+        <rdfs:comment>Character is a daughter</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/arincon/ontologies/2022/3/untitled-ontology-3#Father -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/arincon/ontologies/2022/3/untitled-ontology-3#Father">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/arincon/ontologies/2022/3/untitled-ontology-3#Parent"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/arincon/ontologies/2022/3/untitled-ontology-3#hasDaughter"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/arincon/ontologies/2022/3/untitled-ontology-3#Daughter"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/arincon/ontologies/2022/3/untitled-ontology-3#hasSon"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/arincon/ontologies/2022/3/untitled-ontology-3#Son"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/arincon/ontologies/2022/3/untitled-ontology-3#Mother"/>
+        <rdfs:comment>Character is a father</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/arincon/ontologies/2022/3/untitled-ontology-3#Female -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/arincon/ontologies/2022/3/untitled-ontology-3#Female">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/arincon/ontologies/2022/3/untitled-ontology-3#Character"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/arincon/ontologies/2022/3/untitled-ontology-3#Male"/>
+        <rdfs:comment>Female characters in the series</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/arincon/ontologies/2022/3/untitled-ontology-3#Grandchild -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/arincon/ontologies/2022/3/untitled-ontology-3#Grandchild">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/arincon/ontologies/2022/3/untitled-ontology-3#Relation"/>
+        <rdfs:comment>Character is a grandchild</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/arincon/ontologies/2022/3/untitled-ontology-3#Granddaughter -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/arincon/ontologies/2022/3/untitled-ontology-3#Granddaughter">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/arincon/ontologies/2022/3/untitled-ontology-3#Grandchild"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/arincon/ontologies/2022/3/untitled-ontology-3#hasGrandFather"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/arincon/ontologies/2022/3/untitled-ontology-3#Grandfather"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/arincon/ontologies/2022/3/untitled-ontology-3#hasGrandMother"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/arincon/ontologies/2022/3/untitled-ontology-3#Grandmother"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/arincon/ontologies/2022/3/untitled-ontology-3#Grandson"/>
+        <rdfs:comment>Character is a granddaughter</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/arincon/ontologies/2022/3/untitled-ontology-3#Grandfather -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/arincon/ontologies/2022/3/untitled-ontology-3#Grandfather">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/arincon/ontologies/2022/3/untitled-ontology-3#Grandparent"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/arincon/ontologies/2022/3/untitled-ontology-3#hasGranddaughter"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/arincon/ontologies/2022/3/untitled-ontology-3#Granddaughter"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/arincon/ontologies/2022/3/untitled-ontology-3#hasGrandson"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/arincon/ontologies/2022/3/untitled-ontology-3#Grandson"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/arincon/ontologies/2022/3/untitled-ontology-3#Grandmother"/>
+        <rdfs:comment>Character is a grandfather</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/arincon/ontologies/2022/3/untitled-ontology-3#Grandmother -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/arincon/ontologies/2022/3/untitled-ontology-3#Grandmother">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/arincon/ontologies/2022/3/untitled-ontology-3#Grandparent"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/arincon/ontologies/2022/3/untitled-ontology-3#hasGranddaughter"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/arincon/ontologies/2022/3/untitled-ontology-3#Granddaughter"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/arincon/ontologies/2022/3/untitled-ontology-3#hasGrandson"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/arincon/ontologies/2022/3/untitled-ontology-3#Grandson"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment>Character is a grandmother</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/arincon/ontologies/2022/3/untitled-ontology-3#Grandparent -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/arincon/ontologies/2022/3/untitled-ontology-3#Grandparent">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/arincon/ontologies/2022/3/untitled-ontology-3#Relation"/>
+        <rdfs:comment>Character is a grandparent</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/arincon/ontologies/2022/3/untitled-ontology-3#Grandson -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/arincon/ontologies/2022/3/untitled-ontology-3#Grandson">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/arincon/ontologies/2022/3/untitled-ontology-3#Grandchild"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/arincon/ontologies/2022/3/untitled-ontology-3#hasGrandFather"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/arincon/ontologies/2022/3/untitled-ontology-3#Grandfather"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/arincon/ontologies/2022/3/untitled-ontology-3#hasGrandMother"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/arincon/ontologies/2022/3/untitled-ontology-3#Grandmother"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment>Character is a grandson</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/arincon/ontologies/2022/3/untitled-ontology-3#House -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/arincon/ontologies/2022/3/untitled-ontology-3#House">
+        <rdfs:comment>The house represents a family</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/arincon/ontologies/2022/3/untitled-ontology-3#Husband -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/arincon/ontologies/2022/3/untitled-ontology-3#Husband">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/arincon/ontologies/2022/3/untitled-ontology-3#Spouse"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/arincon/ontologies/2022/3/untitled-ontology-3#hasWife"/>
+                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/arincon/ontologies/2022/3/untitled-ontology-3#Wife"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/arincon/ontologies/2022/3/untitled-ontology-3#Wife"/>
+        <rdfs:comment>Character is a husband</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/arincon/ontologies/2022/3/untitled-ontology-3#Male -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/arincon/ontologies/2022/3/untitled-ontology-3#Male">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/arincon/ontologies/2022/3/untitled-ontology-3#Character"/>
+        <rdfs:comment>Male characters in the series</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/arincon/ontologies/2022/3/untitled-ontology-3#Mother -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/arincon/ontologies/2022/3/untitled-ontology-3#Mother">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/arincon/ontologies/2022/3/untitled-ontology-3#Parent"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/arincon/ontologies/2022/3/untitled-ontology-3#hasDaughter"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/arincon/ontologies/2022/3/untitled-ontology-3#Daughter"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/arincon/ontologies/2022/3/untitled-ontology-3#hasSon"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/arincon/ontologies/2022/3/untitled-ontology-3#Son"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment>Character is a mother</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/arincon/ontologies/2022/3/untitled-ontology-3#Parent -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/arincon/ontologies/2022/3/untitled-ontology-3#Parent">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/arincon/ontologies/2022/3/untitled-ontology-3#Relation"/>
+        <rdfs:comment>Character is a parent</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/arincon/ontologies/2022/3/untitled-ontology-3#Principal -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/arincon/ontologies/2022/3/untitled-ontology-3#Principal">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/arincon/ontologies/2022/3/untitled-ontology-3#House"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/arincon/ontologies/2022/3/untitled-ontology-3#Trust"/>
+        <rdfs:comment>Main house within a territory</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/arincon/ontologies/2022/3/untitled-ontology-3#Relation -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/arincon/ontologies/2022/3/untitled-ontology-3#Relation">
+        <rdfs:comment>Relationship between the characters</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/arincon/ontologies/2022/3/untitled-ontology-3#Siblings -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/arincon/ontologies/2022/3/untitled-ontology-3#Siblings">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/arincon/ontologies/2022/3/untitled-ontology-3#Relation"/>
+        <rdfs:comment>Character is a siblings</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/arincon/ontologies/2022/3/untitled-ontology-3#Sister -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/arincon/ontologies/2022/3/untitled-ontology-3#Sister">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/arincon/ontologies/2022/3/untitled-ontology-3#Siblings"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/arincon/ontologies/2022/3/untitled-ontology-3#hasBrother"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/arincon/ontologies/2022/3/untitled-ontology-3#Brother"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment>Character is a sister</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/arincon/ontologies/2022/3/untitled-ontology-3#Son -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/arincon/ontologies/2022/3/untitled-ontology-3#Son">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/arincon/ontologies/2022/3/untitled-ontology-3#Child"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/arincon/ontologies/2022/3/untitled-ontology-3#hasFather"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/arincon/ontologies/2022/3/untitled-ontology-3#Father"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/arincon/ontologies/2022/3/untitled-ontology-3#hasMother"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/arincon/ontologies/2022/3/untitled-ontology-3#Mother"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment>Character is a son</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/arincon/ontologies/2022/3/untitled-ontology-3#Spouse -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/arincon/ontologies/2022/3/untitled-ontology-3#Spouse">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/arincon/ontologies/2022/3/untitled-ontology-3#Relation"/>
+        <rdfs:comment>Spouse between character</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/arincon/ontologies/2022/3/untitled-ontology-3#Trust -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/arincon/ontologies/2022/3/untitled-ontology-3#Trust">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/arincon/ontologies/2022/3/untitled-ontology-3#House"/>
+        <rdfs:comment>House trust  with the principal</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/arincon/ontologies/2022/3/untitled-ontology-3#Wife -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/arincon/ontologies/2022/3/untitled-ontology-3#Wife">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/arincon/ontologies/2022/3/untitled-ontology-3#Spouse"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/arincon/ontologies/2022/3/untitled-ontology-3#hasHusband"/>
+                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/arincon/ontologies/2022/3/untitled-ontology-3#Husband"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment>Character is a wife</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/arincon/ontologies/2022/3/untitled-ontology-3#hou_baratheon -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/arincon/ontologies/2022/3/untitled-ontology-3#hou_baratheon">
+        <rdf:type rdf:resource="http://www.semanticweb.org/arincon/ontologies/2022/3/untitled-ontology-3#Principal"/>
+        <untitled-ontology-3:catchword>Ours is the Fury</untitled-ontology-3:catchword>
+        <untitled-ontology-3:emblem>A black stag on a field of gold</untitled-ontology-3:emblem>
+        <untitled-ontology-3:houseName>Baratheon</untitled-ontology-3:houseName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/arincon/ontologies/2022/3/untitled-ontology-3#hou_lannister -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/arincon/ontologies/2022/3/untitled-ontology-3#hou_lannister">
+        <rdf:type rdf:resource="http://www.semanticweb.org/arincon/ontologies/2022/3/untitled-ontology-3#Principal"/>
+        <untitled-ontology-3:catchword>Hear Me Roar!</untitled-ontology-3:catchword>
+        <untitled-ontology-3:emblem>A golden lion rampant on a crimson field</untitled-ontology-3:emblem>
+        <untitled-ontology-3:houseName>Lannister</untitled-ontology-3:houseName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/arincon/ontologies/2022/3/untitled-ontology-3#hou_stark -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/arincon/ontologies/2022/3/untitled-ontology-3#hou_stark">
+        <rdf:type rdf:resource="http://www.semanticweb.org/arincon/ontologies/2022/3/untitled-ontology-3#Principal"/>
+        <untitled-ontology-3:catchword>Winter is Coming</untitled-ontology-3:catchword>
+        <untitled-ontology-3:emblem>A grey direwolf running on a white field</untitled-ontology-3:emblem>
+        <untitled-ontology-3:houseName>Stark</untitled-ontology-3:houseName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/arincon/ontologies/2022/3/untitled-ontology-3#hou_tully -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/arincon/ontologies/2022/3/untitled-ontology-3#hou_tully">
+        <rdf:type rdf:resource="http://www.semanticweb.org/arincon/ontologies/2022/3/untitled-ontology-3#Principal"/>
+        <untitled-ontology-3:catchword>Family, Duty, Honor</untitled-ontology-3:catchword>
+        <untitled-ontology-3:emblem>A leaping silver trout on a field of rippling blue and red stripes</untitled-ontology-3:emblem>
+        <untitled-ontology-3:houseName>Tully</untitled-ontology-3:houseName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/arincon/ontologies/2022/3/untitled-ontology-3#per_arya -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/arincon/ontologies/2022/3/untitled-ontology-3#per_arya">
+        <rdf:type rdf:resource="http://www.semanticweb.org/arincon/ontologies/2022/3/untitled-ontology-3#Female"/>
+        <untitled-ontology-3:belongsToHouse rdf:resource="http://www.semanticweb.org/arincon/ontologies/2022/3/untitled-ontology-3#hou_stark"/>
+        <untitled-ontology-3:hasBrother rdf:resource="http://www.semanticweb.org/arincon/ontologies/2022/3/untitled-ontology-3#per_bran"/>
+        <untitled-ontology-3:hasBrother rdf:resource="http://www.semanticweb.org/arincon/ontologies/2022/3/untitled-ontology-3#per_rickon"/>
+        <untitled-ontology-3:hasBrother rdf:resource="http://www.semanticweb.org/arincon/ontologies/2022/3/untitled-ontology-3#per_robb"/>
+        <untitled-ontology-3:hasFather rdf:resource="http://www.semanticweb.org/arincon/ontologies/2022/3/untitled-ontology-3#per_eddard"/>
+        <untitled-ontology-3:hasMother rdf:resource="http://www.semanticweb.org/arincon/ontologies/2022/3/untitled-ontology-3#per_catelyn"/>
+        <untitled-ontology-3:hasSister rdf:resource="http://www.semanticweb.org/arincon/ontologies/2022/3/untitled-ontology-3#per_sansa"/>
+        <untitled-ontology-3:name>Arya</untitled-ontology-3:name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/arincon/ontologies/2022/3/untitled-ontology-3#per_bran -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/arincon/ontologies/2022/3/untitled-ontology-3#per_bran">
+        <rdf:type rdf:resource="http://www.semanticweb.org/arincon/ontologies/2022/3/untitled-ontology-3#Male"/>
+        <untitled-ontology-3:belongsToHouse rdf:resource="http://www.semanticweb.org/arincon/ontologies/2022/3/untitled-ontology-3#hou_stark"/>
+        <untitled-ontology-3:hasBrother rdf:resource="http://www.semanticweb.org/arincon/ontologies/2022/3/untitled-ontology-3#per_rickon"/>
+        <untitled-ontology-3:hasBrother rdf:resource="http://www.semanticweb.org/arincon/ontologies/2022/3/untitled-ontology-3#per_robb"/>
+        <untitled-ontology-3:hasFather rdf:resource="http://www.semanticweb.org/arincon/ontologies/2022/3/untitled-ontology-3#per_eddard"/>
+        <untitled-ontology-3:hasMother rdf:resource="http://www.semanticweb.org/arincon/ontologies/2022/3/untitled-ontology-3#per_catelyn"/>
+        <untitled-ontology-3:hasSister rdf:resource="http://www.semanticweb.org/arincon/ontologies/2022/3/untitled-ontology-3#per_arya"/>
+        <untitled-ontology-3:hasSister rdf:resource="http://www.semanticweb.org/arincon/ontologies/2022/3/untitled-ontology-3#per_sansa"/>
+        <untitled-ontology-3:name>Bran</untitled-ontology-3:name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/arincon/ontologies/2022/3/untitled-ontology-3#per_catelyn -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/arincon/ontologies/2022/3/untitled-ontology-3#per_catelyn">
+        <rdf:type rdf:resource="http://www.semanticweb.org/arincon/ontologies/2022/3/untitled-ontology-3#Female"/>
+        <untitled-ontology-3:belongsToHouse rdf:resource="http://www.semanticweb.org/arincon/ontologies/2022/3/untitled-ontology-3#hou_tully"/>
+        <untitled-ontology-3:hasDaughter rdf:resource="http://www.semanticweb.org/arincon/ontologies/2022/3/untitled-ontology-3#per_arya"/>
+        <untitled-ontology-3:hasDaughter rdf:resource="http://www.semanticweb.org/arincon/ontologies/2022/3/untitled-ontology-3#per_sansa"/>
+        <untitled-ontology-3:hasHusband rdf:resource="http://www.semanticweb.org/arincon/ontologies/2022/3/untitled-ontology-3#per_eddard"/>
+        <untitled-ontology-3:hasSon rdf:resource="http://www.semanticweb.org/arincon/ontologies/2022/3/untitled-ontology-3#per_bran"/>
+        <untitled-ontology-3:hasSon rdf:resource="http://www.semanticweb.org/arincon/ontologies/2022/3/untitled-ontology-3#per_rickon"/>
+        <untitled-ontology-3:hasSon rdf:resource="http://www.semanticweb.org/arincon/ontologies/2022/3/untitled-ontology-3#per_robb"/>
+        <untitled-ontology-3:name>Catelyn</untitled-ontology-3:name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/arincon/ontologies/2022/3/untitled-ontology-3#per_cersei -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/arincon/ontologies/2022/3/untitled-ontology-3#per_cersei">
+        <rdf:type rdf:resource="http://www.semanticweb.org/arincon/ontologies/2022/3/untitled-ontology-3#Female"/>
+        <untitled-ontology-3:belongsToHouse rdf:resource="http://www.semanticweb.org/arincon/ontologies/2022/3/untitled-ontology-3#hou_lannister"/>
+        <untitled-ontology-3:hasDaughter rdf:resource="http://www.semanticweb.org/arincon/ontologies/2022/3/untitled-ontology-3#per_myrcella"/>
+        <untitled-ontology-3:hasFather rdf:resource="http://www.semanticweb.org/arincon/ontologies/2022/3/untitled-ontology-3#per_tywin"/>
+        <untitled-ontology-3:hasHusband rdf:resource="http://www.semanticweb.org/arincon/ontologies/2022/3/untitled-ontology-3#per_robert"/>
+        <untitled-ontology-3:hasSon rdf:resource="http://www.semanticweb.org/arincon/ontologies/2022/3/untitled-ontology-3#per_joffrey"/>
+        <untitled-ontology-3:hasSon rdf:resource="http://www.semanticweb.org/arincon/ontologies/2022/3/untitled-ontology-3#per_tommen"/>
+        <untitled-ontology-3:name>Cersei</untitled-ontology-3:name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/arincon/ontologies/2022/3/untitled-ontology-3#per_eddard -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/arincon/ontologies/2022/3/untitled-ontology-3#per_eddard">
+        <rdf:type rdf:resource="http://www.semanticweb.org/arincon/ontologies/2022/3/untitled-ontology-3#Male"/>
+        <untitled-ontology-3:belongsToHouse rdf:resource="http://www.semanticweb.org/arincon/ontologies/2022/3/untitled-ontology-3#hou_stark"/>
+        <untitled-ontology-3:hasDaughter rdf:resource="http://www.semanticweb.org/arincon/ontologies/2022/3/untitled-ontology-3#per_arya"/>
+        <untitled-ontology-3:hasDaughter rdf:resource="http://www.semanticweb.org/arincon/ontologies/2022/3/untitled-ontology-3#per_sansa"/>
+        <untitled-ontology-3:hasSon rdf:resource="http://www.semanticweb.org/arincon/ontologies/2022/3/untitled-ontology-3#per_bran"/>
+        <untitled-ontology-3:hasSon rdf:resource="http://www.semanticweb.org/arincon/ontologies/2022/3/untitled-ontology-3#per_rickon"/>
+        <untitled-ontology-3:hasSon rdf:resource="http://www.semanticweb.org/arincon/ontologies/2022/3/untitled-ontology-3#per_robb"/>
+        <untitled-ontology-3:hasWife rdf:resource="http://www.semanticweb.org/arincon/ontologies/2022/3/untitled-ontology-3#per_catelyn"/>
+        <untitled-ontology-3:name>Eddard</untitled-ontology-3:name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/arincon/ontologies/2022/3/untitled-ontology-3#per_jaime -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/arincon/ontologies/2022/3/untitled-ontology-3#per_jaime">
+        <rdf:type rdf:resource="http://www.semanticweb.org/arincon/ontologies/2022/3/untitled-ontology-3#Male"/>
+        <untitled-ontology-3:belongsToHouse rdf:resource="http://www.semanticweb.org/arincon/ontologies/2022/3/untitled-ontology-3#hou_lannister"/>
+        <untitled-ontology-3:hasBrother rdf:resource="http://www.semanticweb.org/arincon/ontologies/2022/3/untitled-ontology-3#per_tyrion"/>
+        <untitled-ontology-3:hasFather rdf:resource="http://www.semanticweb.org/arincon/ontologies/2022/3/untitled-ontology-3#per_tywin"/>
+        <untitled-ontology-3:hasSister rdf:resource="http://www.semanticweb.org/arincon/ontologies/2022/3/untitled-ontology-3#per_cersei"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/arincon/ontologies/2022/3/untitled-ontology-3#per_joffrey -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/arincon/ontologies/2022/3/untitled-ontology-3#per_joffrey">
+        <rdf:type rdf:resource="http://www.semanticweb.org/arincon/ontologies/2022/3/untitled-ontology-3#Male"/>
+        <untitled-ontology-3:belongsToHouse rdf:resource="http://www.semanticweb.org/arincon/ontologies/2022/3/untitled-ontology-3#hou_baratheon"/>
+        <untitled-ontology-3:hasBrother rdf:resource="http://www.semanticweb.org/arincon/ontologies/2022/3/untitled-ontology-3#per_tommen"/>
+        <untitled-ontology-3:hasFather rdf:resource="http://www.semanticweb.org/arincon/ontologies/2022/3/untitled-ontology-3#per_robert"/>
+        <untitled-ontology-3:hasGrandFather rdf:resource="http://www.semanticweb.org/arincon/ontologies/2022/3/untitled-ontology-3#per_tywin"/>
+        <untitled-ontology-3:hasMother rdf:resource="http://www.semanticweb.org/arincon/ontologies/2022/3/untitled-ontology-3#per_cersei"/>
+        <untitled-ontology-3:hasSister rdf:resource="http://www.semanticweb.org/arincon/ontologies/2022/3/untitled-ontology-3#per_myrcella"/>
+        <untitled-ontology-3:name>Joffrey</untitled-ontology-3:name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/arincon/ontologies/2022/3/untitled-ontology-3#per_myrcella -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/arincon/ontologies/2022/3/untitled-ontology-3#per_myrcella">
+        <rdf:type rdf:resource="http://www.semanticweb.org/arincon/ontologies/2022/3/untitled-ontology-3#Female"/>
+        <untitled-ontology-3:belongsToHouse rdf:resource="http://www.semanticweb.org/arincon/ontologies/2022/3/untitled-ontology-3#hou_baratheon"/>
+        <untitled-ontology-3:hasBrother rdf:resource="http://www.semanticweb.org/arincon/ontologies/2022/3/untitled-ontology-3#per_joffrey"/>
+        <untitled-ontology-3:hasBrother rdf:resource="http://www.semanticweb.org/arincon/ontologies/2022/3/untitled-ontology-3#per_tommen"/>
+        <untitled-ontology-3:hasFather rdf:resource="http://www.semanticweb.org/arincon/ontologies/2022/3/untitled-ontology-3#per_robert"/>
+        <untitled-ontology-3:hasGrandFather rdf:resource="http://www.semanticweb.org/arincon/ontologies/2022/3/untitled-ontology-3#per_tywin"/>
+        <untitled-ontology-3:hasMother rdf:resource="http://www.semanticweb.org/arincon/ontologies/2022/3/untitled-ontology-3#per_cersei"/>
+        <untitled-ontology-3:name>Myrcella</untitled-ontology-3:name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/arincon/ontologies/2022/3/untitled-ontology-3#per_rickon -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/arincon/ontologies/2022/3/untitled-ontology-3#per_rickon">
+        <rdf:type rdf:resource="http://www.semanticweb.org/arincon/ontologies/2022/3/untitled-ontology-3#Male"/>
+        <untitled-ontology-3:belongsToHouse rdf:resource="http://www.semanticweb.org/arincon/ontologies/2022/3/untitled-ontology-3#hou_stark"/>
+        <untitled-ontology-3:hasBrother rdf:resource="http://www.semanticweb.org/arincon/ontologies/2022/3/untitled-ontology-3#per_bran"/>
+        <untitled-ontology-3:hasBrother rdf:resource="http://www.semanticweb.org/arincon/ontologies/2022/3/untitled-ontology-3#per_robb"/>
+        <untitled-ontology-3:hasFather rdf:resource="http://www.semanticweb.org/arincon/ontologies/2022/3/untitled-ontology-3#per_eddard"/>
+        <untitled-ontology-3:hasMother rdf:resource="http://www.semanticweb.org/arincon/ontologies/2022/3/untitled-ontology-3#per_catelyn"/>
+        <untitled-ontology-3:hasSister rdf:resource="http://www.semanticweb.org/arincon/ontologies/2022/3/untitled-ontology-3#per_arya"/>
+        <untitled-ontology-3:hasSister rdf:resource="http://www.semanticweb.org/arincon/ontologies/2022/3/untitled-ontology-3#per_sansa"/>
+        <untitled-ontology-3:name>Rickon</untitled-ontology-3:name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/arincon/ontologies/2022/3/untitled-ontology-3#per_robb -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/arincon/ontologies/2022/3/untitled-ontology-3#per_robb">
+        <rdf:type rdf:resource="http://www.semanticweb.org/arincon/ontologies/2022/3/untitled-ontology-3#Male"/>
+        <untitled-ontology-3:belongsToHouse rdf:resource="http://www.semanticweb.org/arincon/ontologies/2022/3/untitled-ontology-3#hou_stark"/>
+        <untitled-ontology-3:hasBrother rdf:resource="http://www.semanticweb.org/arincon/ontologies/2022/3/untitled-ontology-3#per_bran"/>
+        <untitled-ontology-3:hasBrother rdf:resource="http://www.semanticweb.org/arincon/ontologies/2022/3/untitled-ontology-3#per_rickon"/>
+        <untitled-ontology-3:hasFather rdf:resource="http://www.semanticweb.org/arincon/ontologies/2022/3/untitled-ontology-3#per_eddard"/>
+        <untitled-ontology-3:hasMother rdf:resource="http://www.semanticweb.org/arincon/ontologies/2022/3/untitled-ontology-3#per_catelyn"/>
+        <untitled-ontology-3:hasSister rdf:resource="http://www.semanticweb.org/arincon/ontologies/2022/3/untitled-ontology-3#per_arya"/>
+        <untitled-ontology-3:hasSister rdf:resource="http://www.semanticweb.org/arincon/ontologies/2022/3/untitled-ontology-3#per_sansa"/>
+        <untitled-ontology-3:name>Robb</untitled-ontology-3:name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/arincon/ontologies/2022/3/untitled-ontology-3#per_robert -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/arincon/ontologies/2022/3/untitled-ontology-3#per_robert">
+        <rdf:type rdf:resource="http://www.semanticweb.org/arincon/ontologies/2022/3/untitled-ontology-3#Male"/>
+        <untitled-ontology-3:belongsToHouse rdf:resource="http://www.semanticweb.org/arincon/ontologies/2022/3/untitled-ontology-3#hou_baratheon"/>
+        <untitled-ontology-3:hasDaughter rdf:resource="http://www.semanticweb.org/arincon/ontologies/2022/3/untitled-ontology-3#per_myrcella"/>
+        <untitled-ontology-3:hasSon rdf:resource="http://www.semanticweb.org/arincon/ontologies/2022/3/untitled-ontology-3#per_joffrey"/>
+        <untitled-ontology-3:hasSon rdf:resource="http://www.semanticweb.org/arincon/ontologies/2022/3/untitled-ontology-3#per_tommen"/>
+        <untitled-ontology-3:hasWife rdf:resource="http://www.semanticweb.org/arincon/ontologies/2022/3/untitled-ontology-3#per_cersei"/>
+        <untitled-ontology-3:name>Robert</untitled-ontology-3:name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/arincon/ontologies/2022/3/untitled-ontology-3#per_sansa -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/arincon/ontologies/2022/3/untitled-ontology-3#per_sansa">
+        <rdf:type rdf:resource="http://www.semanticweb.org/arincon/ontologies/2022/3/untitled-ontology-3#Female"/>
+        <untitled-ontology-3:belongsToHouse rdf:resource="http://www.semanticweb.org/arincon/ontologies/2022/3/untitled-ontology-3#hou_stark"/>
+        <untitled-ontology-3:hasBrother rdf:resource="http://www.semanticweb.org/arincon/ontologies/2022/3/untitled-ontology-3#per_bran"/>
+        <untitled-ontology-3:hasBrother rdf:resource="http://www.semanticweb.org/arincon/ontologies/2022/3/untitled-ontology-3#per_rickon"/>
+        <untitled-ontology-3:hasBrother rdf:resource="http://www.semanticweb.org/arincon/ontologies/2022/3/untitled-ontology-3#per_robb"/>
+        <untitled-ontology-3:hasFather rdf:resource="http://www.semanticweb.org/arincon/ontologies/2022/3/untitled-ontology-3#per_eddard"/>
+        <untitled-ontology-3:hasMother rdf:resource="http://www.semanticweb.org/arincon/ontologies/2022/3/untitled-ontology-3#per_catelyn"/>
+        <untitled-ontology-3:hasSister rdf:resource="http://www.semanticweb.org/arincon/ontologies/2022/3/untitled-ontology-3#per_arya"/>
+        <untitled-ontology-3:name>Sansa</untitled-ontology-3:name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/arincon/ontologies/2022/3/untitled-ontology-3#per_tommen -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/arincon/ontologies/2022/3/untitled-ontology-3#per_tommen">
+        <rdf:type rdf:resource="http://www.semanticweb.org/arincon/ontologies/2022/3/untitled-ontology-3#Male"/>
+        <untitled-ontology-3:belongsToHouse rdf:resource="http://www.semanticweb.org/arincon/ontologies/2022/3/untitled-ontology-3#hou_baratheon"/>
+        <untitled-ontology-3:hasBrother rdf:resource="http://www.semanticweb.org/arincon/ontologies/2022/3/untitled-ontology-3#per_joffrey"/>
+        <untitled-ontology-3:hasFather rdf:resource="http://www.semanticweb.org/arincon/ontologies/2022/3/untitled-ontology-3#per_robert"/>
+        <untitled-ontology-3:hasGrandFather rdf:resource="http://www.semanticweb.org/arincon/ontologies/2022/3/untitled-ontology-3#per_tywin"/>
+        <untitled-ontology-3:hasMother rdf:resource="http://www.semanticweb.org/arincon/ontologies/2022/3/untitled-ontology-3#per_cersei"/>
+        <untitled-ontology-3:hasSister rdf:resource="http://www.semanticweb.org/arincon/ontologies/2022/3/untitled-ontology-3#per_myrcella"/>
+        <untitled-ontology-3:name>Tommen</untitled-ontology-3:name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/arincon/ontologies/2022/3/untitled-ontology-3#per_tyrion -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/arincon/ontologies/2022/3/untitled-ontology-3#per_tyrion">
+        <rdf:type rdf:resource="http://www.semanticweb.org/arincon/ontologies/2022/3/untitled-ontology-3#Male"/>
+        <untitled-ontology-3:belongsToHouse rdf:resource="http://www.semanticweb.org/arincon/ontologies/2022/3/untitled-ontology-3#hou_lannister"/>
+        <untitled-ontology-3:hasBrother rdf:resource="http://www.semanticweb.org/arincon/ontologies/2022/3/untitled-ontology-3#per_jaime"/>
+        <untitled-ontology-3:hasFather rdf:resource="http://www.semanticweb.org/arincon/ontologies/2022/3/untitled-ontology-3#per_tywin"/>
+        <untitled-ontology-3:hasSister rdf:resource="http://www.semanticweb.org/arincon/ontologies/2022/3/untitled-ontology-3#per_cersei"/>
+        <untitled-ontology-3:name>Tyrion</untitled-ontology-3:name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/arincon/ontologies/2022/3/untitled-ontology-3#per_tywin -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/arincon/ontologies/2022/3/untitled-ontology-3#per_tywin">
+        <rdf:type rdf:resource="http://www.semanticweb.org/arincon/ontologies/2022/3/untitled-ontology-3#Male"/>
+        <untitled-ontology-3:belongsToHouse rdf:resource="http://www.semanticweb.org/arincon/ontologies/2022/3/untitled-ontology-3#hou_lannister"/>
+        <untitled-ontology-3:hasDaughter rdf:resource="http://www.semanticweb.org/arincon/ontologies/2022/3/untitled-ontology-3#per_cersei"/>
+        <untitled-ontology-3:hasGranddaughter rdf:resource="http://www.semanticweb.org/arincon/ontologies/2022/3/untitled-ontology-3#per_myrcella"/>
+        <untitled-ontology-3:hasGrandson rdf:resource="http://www.semanticweb.org/arincon/ontologies/2022/3/untitled-ontology-3#per_joffrey"/>
+        <untitled-ontology-3:hasGrandson rdf:resource="http://www.semanticweb.org/arincon/ontologies/2022/3/untitled-ontology-3#per_tommen"/>
+        <untitled-ontology-3:hasSon rdf:resource="http://www.semanticweb.org/arincon/ontologies/2022/3/untitled-ontology-3#per_jaime"/>
+        <untitled-ontology-3:hasSon rdf:resource="http://www.semanticweb.org/arincon/ontologies/2022/3/untitled-ontology-3#per_tyrion"/>
+        <untitled-ontology-3:name>Tywin</untitled-ontology-3:name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotations
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <rdf:Description rdf:about="http://www.semanticweb.org/arincon/ontologies/2022/3/untitled-ontology-3#house_name">
+        <rdfs:comment>Is the name of the house</rdfs:comment>
+    </rdf:Description>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+
