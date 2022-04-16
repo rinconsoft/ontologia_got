@@ -1,0 +1,181 @@
+{
+  "@context" : {
+    "Mother" : {
+      "@id" : "http://www.semanticweb.org/arincon/ontologies/2022/3/untitled-ontology-3#Mother"
+    },
+    "Grandson" : {
+      "@id" : "http://www.semanticweb.org/arincon/ontologies/2022/3/untitled-ontology-3#Grandson"
+    },
+    "Parent" : {
+      "@id" : "http://www.semanticweb.org/arincon/ontologies/2022/3/untitled-ontology-3#Parent"
+    },
+    "Daughter" : {
+      "@id" : "http://www.semanticweb.org/arincon/ontologies/2022/3/untitled-ontology-3#Daughter"
+    },
+    "Wife" : {
+      "@id" : "http://www.semanticweb.org/arincon/ontologies/2022/3/untitled-ontology-3#Wife"
+    },
+    "hasGrandFather" : {
+      "@id" : "http://www.semanticweb.org/arincon/ontologies/2022/3/untitled-ontology-3#hasGrandFather",
+      "@type" : "@id"
+    },
+    "hasSpouse" : {
+      "@id" : "http://www.semanticweb.org/arincon/ontologies/2022/3/untitled-ontology-3#hasSpouse",
+      "@type" : "@id"
+    },
+    "Sister" : {
+      "@id" : "http://www.semanticweb.org/arincon/ontologies/2022/3/untitled-ontology-3#Sister"
+    },
+    "hasHusband" : {
+      "@id" : "http://www.semanticweb.org/arincon/ontologies/2022/3/untitled-ontology-3#hasHusband",
+      "@type" : "@id"
+    },
+    "hasParent" : {
+      "@id" : "http://www.semanticweb.org/arincon/ontologies/2022/3/untitled-ontology-3#hasParent",
+      "@type" : "@id"
+    },
+    "Siblings" : {
+      "@id" : "http://www.semanticweb.org/arincon/ontologies/2022/3/untitled-ontology-3#Siblings"
+    },
+    "House" : {
+      "@id" : "http://www.semanticweb.org/arincon/ontologies/2022/3/untitled-ontology-3#House"
+    },
+    "hasFather" : {
+      "@id" : "http://www.semanticweb.org/arincon/ontologies/2022/3/untitled-ontology-3#hasFather",
+      "@type" : "@id"
+    },
+    "Character" : {
+      "@id" : "http://www.semanticweb.org/arincon/ontologies/2022/3/untitled-ontology-3#Character"
+    },
+    "Grandmother" : {
+      "@id" : "http://www.semanticweb.org/arincon/ontologies/2022/3/untitled-ontology-3#Grandmother"
+    },
+    "Son" : {
+      "@id" : "http://www.semanticweb.org/arincon/ontologies/2022/3/untitled-ontology-3#Son"
+    },
+    "Relation" : {
+      "@id" : "http://www.semanticweb.org/arincon/ontologies/2022/3/untitled-ontology-3#Relation"
+    },
+    "name" : {
+      "@id" : "http://www.semanticweb.org/arincon/ontologies/2022/3/untitled-ontology-3#name",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "hasMother" : {
+      "@id" : "http://www.semanticweb.org/arincon/ontologies/2022/3/untitled-ontology-3#hasMother",
+      "@type" : "@id"
+    },
+    "Male" : {
+      "@id" : "http://www.semanticweb.org/arincon/ontologies/2022/3/untitled-ontology-3#Male"
+    },
+    "hasGrandMother" : {
+      "@id" : "http://www.semanticweb.org/arincon/ontologies/2022/3/untitled-ontology-3#hasGrandMother",
+      "@type" : "@id"
+    },
+    "hasBrother" : {
+      "@id" : "http://www.semanticweb.org/arincon/ontologies/2022/3/untitled-ontology-3#hasBrother",
+      "@type" : "@id"
+    },
+    "hasGrandparent" : {
+      "@id" : "http://www.semanticweb.org/arincon/ontologies/2022/3/untitled-ontology-3#hasGrandparent",
+      "@type" : "@id"
+    },
+    "hasRelation" : {
+      "@id" : "http://www.semanticweb.org/arincon/ontologies/2022/3/untitled-ontology-3#hasRelation",
+      "@type" : "@id"
+    },
+    "hasWife" : {
+      "@id" : "http://www.semanticweb.org/arincon/ontologies/2022/3/untitled-ontology-3#hasWife",
+      "@type" : "@id"
+    },
+    "hasSister" : {
+      "@id" : "http://www.semanticweb.org/arincon/ontologies/2022/3/untitled-ontology-3#hasSister",
+      "@type" : "@id"
+    },
+    "Female" : {
+      "@id" : "http://www.semanticweb.org/arincon/ontologies/2022/3/untitled-ontology-3#Female"
+    },
+    "Grandfather" : {
+      "@id" : "http://www.semanticweb.org/arincon/ontologies/2022/3/untitled-ontology-3#Grandfather"
+    },
+    "emblem" : {
+      "@id" : "http://www.semanticweb.org/arincon/ontologies/2022/3/untitled-ontology-3#emblem",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "Brother" : {
+      "@id" : "http://www.semanticweb.org/arincon/ontologies/2022/3/untitled-ontology-3#Brother"
+    },
+    "Husband" : {
+      "@id" : "http://www.semanticweb.org/arincon/ontologies/2022/3/untitled-ontology-3#Husband"
+    },
+    "belongsToHouse" : {
+      "@id" : "http://www.semanticweb.org/arincon/ontologies/2022/3/untitled-ontology-3#belongsToHouse",
+      "@type" : "@id"
+    },
+    "hasGrandson" : {
+      "@id" : "http://www.semanticweb.org/arincon/ontologies/2022/3/untitled-ontology-3#hasGrandson",
+      "@type" : "@id"
+    },
+    "Grandchild" : {
+      "@id" : "http://www.semanticweb.org/arincon/ontologies/2022/3/untitled-ontology-3#Grandchild"
+    },
+    "hasSiblings" : {
+      "@id" : "http://www.semanticweb.org/arincon/ontologies/2022/3/untitled-ontology-3#hasSiblings",
+      "@type" : "@id"
+    },
+    "Child" : {
+      "@id" : "http://www.semanticweb.org/arincon/ontologies/2022/3/untitled-ontology-3#Child"
+    },
+    "sameAs" : {
+      "@id" : "http://www.w3.org/2000/01/rdf-schema#sameAs"
+    },
+    "Trust" : {
+      "@id" : "http://www.semanticweb.org/arincon/ontologies/2022/3/untitled-ontology-3#Trust"
+    },
+    "comment" : {
+      "@id" : "http://www.w3.org/2000/01/rdf-schema#comment"
+    },
+    "Father" : {
+      "@id" : "http://www.semanticweb.org/arincon/ontologies/2022/3/untitled-ontology-3#Father"
+    },
+    "Principal" : {
+      "@id" : "http://www.semanticweb.org/arincon/ontologies/2022/3/untitled-ontology-3#Principal"
+    },
+    "catchword" : {
+      "@id" : "http://www.semanticweb.org/arincon/ontologies/2022/3/untitled-ontology-3#catchword",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "hasSon" : {
+      "@id" : "http://www.semanticweb.org/arincon/ontologies/2022/3/untitled-ontology-3#hasSon",
+      "@type" : "@id"
+    },
+    "Spouse" : {
+      "@id" : "http://www.semanticweb.org/arincon/ontologies/2022/3/untitled-ontology-3#Spouse"
+    },
+    "Grandparent" : {
+      "@id" : "http://www.semanticweb.org/arincon/ontologies/2022/3/untitled-ontology-3#Grandparent"
+    },
+    "Granddaughter" : {
+      "@id" : "http://www.semanticweb.org/arincon/ontologies/2022/3/untitled-ontology-3#Granddaughter"
+    },
+    "houseName" : {
+      "@id" : "http://www.semanticweb.org/arincon/ontologies/2022/3/untitled-ontology-3#houseName",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "hasGrandchild" : {
+      "@id" : "http://www.semanticweb.org/arincon/ontologies/2022/3/untitled-ontology-3#hasGrandchild",
+      "@type" : "@id"
+    },
+    "hasGranddaughter" : {
+      "@id" : "http://www.semanticweb.org/arincon/ontologies/2022/3/untitled-ontology-3#hasGranddaughter",
+      "@type" : "@id"
+    },
+    "hasChild" : {
+      "@id" : "http://www.semanticweb.org/arincon/ontologies/2022/3/untitled-ontology-3#hasChild",
+      "@type" : "@id"
+    },
+    "hasDaughter" : {
+      "@id" : "http://www.semanticweb.org/arincon/ontologies/2022/3/untitled-ontology-3#hasDaughter",
+      "@type" : "@id"
+    }
+  }
+}
