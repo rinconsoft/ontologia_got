@@ -18,6 +18,23 @@ created by Antonio C. Rincón Ramos</rdfs:comment>
     <!-- 
     ///////////////////////////////////////////////////////////////////////////////////////
     //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.w3.org/2000/01/rdf-schema#sameAs -->
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/2000/01/rdf-schema#sameAs"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
     // Object Properties
     //
     ///////////////////////////////////////////////////////////////////////////////////////
@@ -727,6 +744,7 @@ created by Antonio C. Rincón Ramos</rdfs:comment>
         <untitled-ontology-3:hasMother rdf:resource="http://www.semanticweb.org/arincon/ontologies/2022/3/untitled-ontology-3#per_catelyn"/>
         <untitled-ontology-3:hasSister rdf:resource="http://www.semanticweb.org/arincon/ontologies/2022/3/untitled-ontology-3#per_sansa"/>
         <untitled-ontology-3:name>Arya</untitled-ontology-3:name>
+        <rdfs:sameAs>https://dbpedia.org/page/Arya_Stark</rdfs:sameAs>
     </owl:NamedIndividual>
     
 
@@ -774,6 +792,7 @@ created by Antonio C. Rincón Ramos</rdfs:comment>
         <untitled-ontology-3:hasSon rdf:resource="http://www.semanticweb.org/arincon/ontologies/2022/3/untitled-ontology-3#per_joffrey"/>
         <untitled-ontology-3:hasSon rdf:resource="http://www.semanticweb.org/arincon/ontologies/2022/3/untitled-ontology-3#per_tommen"/>
         <untitled-ontology-3:name>Cersei</untitled-ontology-3:name>
+        <rdfs:sameAs>https://dbpedia.org/page/Cersei_Lannister</rdfs:sameAs>
     </owl:NamedIndividual>
     
 
@@ -790,6 +809,7 @@ created by Antonio C. Rincón Ramos</rdfs:comment>
         <untitled-ontology-3:hasSon rdf:resource="http://www.semanticweb.org/arincon/ontologies/2022/3/untitled-ontology-3#per_robb"/>
         <untitled-ontology-3:hasWife rdf:resource="http://www.semanticweb.org/arincon/ontologies/2022/3/untitled-ontology-3#per_catelyn"/>
         <untitled-ontology-3:name>Eddard</untitled-ontology-3:name>
+        <rdfs:sameAs>https://dbpedia.org/page/Ned_Stark</rdfs:sameAs>
     </owl:NamedIndividual>
     
 
@@ -817,6 +837,7 @@ created by Antonio C. Rincón Ramos</rdfs:comment>
         <untitled-ontology-3:hasMother rdf:resource="http://www.semanticweb.org/arincon/ontologies/2022/3/untitled-ontology-3#per_cersei"/>
         <untitled-ontology-3:hasSister rdf:resource="http://www.semanticweb.org/arincon/ontologies/2022/3/untitled-ontology-3#per_myrcella"/>
         <untitled-ontology-3:name>Joffrey</untitled-ontology-3:name>
+        <rdfs:sameAs>https://dbpedia.org/page/Joffrey_Baratheon</rdfs:sameAs>
     </owl:NamedIndividual>
     
 
@@ -894,6 +915,7 @@ created by Antonio C. Rincón Ramos</rdfs:comment>
         <untitled-ontology-3:hasMother rdf:resource="http://www.semanticweb.org/arincon/ontologies/2022/3/untitled-ontology-3#per_catelyn"/>
         <untitled-ontology-3:hasSister rdf:resource="http://www.semanticweb.org/arincon/ontologies/2022/3/untitled-ontology-3#per_arya"/>
         <untitled-ontology-3:name>Sansa</untitled-ontology-3:name>
+        <rdfs:sameAs>https://dbpedia.org/page/Sansa_Stark</rdfs:sameAs>
     </owl:NamedIndividual>
     
 
@@ -938,6 +960,7 @@ created by Antonio C. Rincón Ramos</rdfs:comment>
         <untitled-ontology-3:hasSon rdf:resource="http://www.semanticweb.org/arincon/ontologies/2022/3/untitled-ontology-3#per_jaime"/>
         <untitled-ontology-3:hasSon rdf:resource="http://www.semanticweb.org/arincon/ontologies/2022/3/untitled-ontology-3#per_tyrion"/>
         <untitled-ontology-3:name>Tywin</untitled-ontology-3:name>
+        <rdfs:sameAs>https://dbpedia.org/page/Tywin_Lannister</rdfs:sameAs>
     </owl:NamedIndividual>
     
 
